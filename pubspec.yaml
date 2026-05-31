@@ -1,0 +1,35 @@
+name: filesystem_raid
+description: >
+    A professional Dart library implementing RAID 0/1/5 on the local filesystem with striping, mirroring, parity (XOR/Reed-Solomon), health monitoring, compression, and encryption in pure software.
+  
+version: 1.0.0
+homepage: https://github.com/Brah-Timo/filesystem_raid
+repository: https://github.com/Brah-Timo/filesystem_raid
+issue_tracker: https://github.com/Brah-Timo/filesystem_raid/issues
+documentation: https://pub.dev/documentation/filesystem_raid/latest/
+
+environment:
+  sdk: ">=3.0.0 <4.0.0"
+
+topics:
+  - raid
+  - storage
+  - filesystem
+  - data-protection
+  - nas
+
+dependencies:
+  archive: ^3.4.9       # DEFLATE / ZLIB compression
+  collection: ^1.18.0   # UnmodifiableListView, etc.
+  crypto: ^3.0.3        # SHA-256 / MD5 checksums
+  encrypt: ^5.0.3       # AES-256 encryption (optional layer)
+  file: ^7.0.0          # Abstract filesystem layer (aids testing)
+  logging: ^1.2.0       # Structured levelled logging
+  meta: ^1.11.0         # @immutable, @visibleForTesting, etc.
+  path: ^1.9.0          # Cross-platform path helpers
+
+dev_dependencies:
+  coverage: ^1.7.2
+  lints: ^3.0.0
+  mocktail: ^1.0.3
+  test: ^1.25.0
